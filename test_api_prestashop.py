@@ -121,52 +121,52 @@ def get_id(to_get_id):
 
 
 new_category = """<prestashop xmlns:xlink="http://www.w3.org/1999/xlink">
-<category>
-<active>0</active>
-<position>
-<![CDATA[ 0 ]]>
-</position>
-<name>
-<language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
-<![CDATA[ korenevij-katalog ]]>
-</language>
-</name>
-<link_rewrite>
-<language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
-<![CDATA[ korenevij-katalog ]]>
-</language>
-</link_rewrite>
-<description>
-<language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
-<![CDATA[ ]]>
-</language>
-</description>
-<meta_title>
-<language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
-<![CDATA[ ]]>
-</language>
-</meta_title>
-<meta_description>
-<language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
-<![CDATA[ ]]>
-</language>
-</meta_description>
-<meta_keywords>
-<language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
-<![CDATA[ ]]>
-</language>
-</meta_keywords>
-<associations>
-<categories nodeType="category" api="categories">
-<category xlink:href="http://164.92.218.36:8080/api/categories/2">
-<id>
-<![CDATA[ 2 ]]>
-</id>
-</category>
-</categories>
-<products nodeType="product" api="products"/>
-</associations>
-</category>
+    <category>
+        <active>0</active>
+        <position>
+        <![CDATA[ 0 ]]>
+        </position>
+        <name>
+        <language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
+        <![CDATA[ korenevij-katalog ]]>
+        </language>
+        </name>
+        <link_rewrite>
+        <language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
+        <![CDATA[ korenevij-katalog ]]>
+        </language>
+        </link_rewrite>
+        <description>
+        <language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
+        <![CDATA[ ]]>
+        </language>
+        </description>
+        <meta_title>
+        <language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
+        <![CDATA[ ]]>
+        </language>
+        </meta_title>
+        <meta_description>
+        <language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
+        <![CDATA[ ]]>
+        </language>
+        </meta_description>
+        <meta_keywords>
+        <language id="1" xlink:href="http://164.92.218.36:8080/api/languages/1">
+        <![CDATA[ ]]>
+        </language>
+        </meta_keywords>
+        <associations>
+        <categories nodeType="category" api="categories">
+        <category xlink:href="http://164.92.218.36:8080/api/categories/2">
+        <id>
+        <![CDATA[ 2 ]]>
+        </id>
+        </category>
+        </categories>
+        <products nodeType="product" api="products"/>
+        </associations>
+    </category>
 </prestashop>"""
 
 
