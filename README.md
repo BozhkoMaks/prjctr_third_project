@@ -4,7 +4,20 @@
 
 <p>Це тестовий набір для API. Він містить тести для категорій "Адреси" та "Категорії", які перевіряють, чи можна зробити виклик до API, додати нову адресу або категорію, оновити створену адресу або категорію та видалити створену адресу або категорію.</p>
 
-### Щоб запустити цей код, Вам потрібно:
+### Для досвічених
+Ви можете повністю клонувати цей репозиторій, більш детально про це __[тут](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)__. 
+
+```sh
+git clone https://github.com/BozhkoMaks/prjctr.git
+```
+
+Після клонування ви зможете запускати тести командою
+
+```sh
+pytest 
+```
+
+### Для новачків. Щоб запустити цей код, Вам потрібно:
 
 1. Завантажити та встановити Python на свій комп'ютер.
 2. Встановити pytest. Ви можете зробити це, виконавши команду "pip install pytest" у терміналі.
@@ -16,7 +29,7 @@ pip install pytest
 pip install requests
 ```
 3. Відкрити текстовий редактор, такий як Notepad.
-4. Скопіюйте код з файлу [`test_shop_api_address.py`](test_shop_api_address.py) або [`test_categories.py`](test_categories.py) та вставте його у відкритий текстовий редактор.
+4. Скопіюйте код з файлу [`test_api_prestashop.py`](test_api_prestashop.py) та вставте його у відкритий текстовий редактор.
 5. Збережіть файл з розширенням `.py`, наприклад, `test_api.py`.
 6. Відкрийте командний рядок (для Windows) або термінал (для Mac або Linux).
 7. Перейдіть до директорії, де збережений файл з кодом командою `cd "тут вкажіть шлях до директорії"`.
@@ -32,24 +45,6 @@ pytest test_api.py -s -v
 
 ### P.S. Зверніть увагу. 
 Команди на запуск тестів будуть працювати тільки у разі назви файлу з прикладу `test_api.py`, у іншому випадку замініть у команді `test_api.py` на назву вашого файлу.
-
-### P.P.S.
-Звісно ви можете і повністю клонувати цей репозиторій, більш детально про це __[тут](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)__. 
-
-```sh
-git clone https://github.com/BozhkoMaks/prjctr.git
-```
-
-Після клонування ви зможете запускати тести командами
-
-```sh
-pytest test_shop_api_address.py
-```
-та
-
-```sh
-pytest test_categories.py
-```
 
 #### [Тести до категорії "Адреси"](test_shop_api_address.py)
 __Перший тест__ `test_can_call_endpoint()` просто перевіряє, чи можна зробити запит до вказаної точки входу (ENDPOINT) за допомогою методу GET і чи повертається статус код 200. 
@@ -88,35 +83,29 @@ pytest test_api.py::test_can_delete_the_address
 ```
 
 #### [Тести до категорії "Категорії"](test_categories.py)
-__Перший тест__ `test_can_call_endpoint` перевіряє, чи можна зробити запит GET до ендпоінту.
-<p>Команда запуску тесту:</p>
 
-```sh
-pytest test_api.py::test_can_call_endpoint
-```
-
-__Другий тест__ `test_can_get_categories` перевіряє, чи можна зробити запит GET до ендпоінту /categories.
+__Перший тест__ `test_can_get_categories` перевіряє, чи можна зробити запит GET до ендпоінту /categories.
 <p>Команда запуску тесту:</p>
 
 ```sh
 pytest test_api.py::test_can_get_categories
 ```
 
-__Третій тест__ `test_can_create_new_categories` перевіряє можливість створення нової категорії за допомогою запиту POST до ендпоінту /categories. Запит відправляє XML-документ, який містить дані про нову категорію.
+__Другий тест__ `test_can_create_new_categories` перевіряє можливість створення нової категорії за допомогою запиту POST до ендпоінту /categories. Запит відправляє XML-документ, який містить дані про нову категорію.
 <p>Команда запуску тесту:</p>
 
 ```sh
 pytest test_api.py::test_can_create_new_categories
 ```
 
-__Четвертий тест__ `test_cannot_update_the_category` перевіряє, чи неможливо оновити категорію за допомогою запиту PUT до ендпоінту /categories/{id}. Запит відправляє XML-документ з оновленими даними про категорію.
+__Третій тест__ `test_cannot_update_the_category` перевіряє, чи неможливо оновити категорію за допомогою запиту PUT до ендпоінту /categories/{id}. Запит відправляє XML-документ з оновленими даними про категорію.
 <p>Команда запуску тесту:</p>
 
 ```sh
 pytest test_api.py::test_cannot_update_the_category
 ```
 
-__П'ятий тест__ `test_cannot_delete_the_category` перевіряє, чи неможливо видалити категорію за допомогою запиту DELETE до ендпоінту /categories/{id}.
+__Четвертий тест__ `test_cannot_delete_the_category` перевіряє, чи неможливо видалити категорію за допомогою запиту DELETE до ендпоінту /categories/{id}.
 <p>Команда запуску тесту:</p>
 
 ```sh
