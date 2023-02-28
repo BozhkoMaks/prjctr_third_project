@@ -8,7 +8,7 @@
 Ви можете повністю клонувати цей репозиторій, більш детально про це __[тут](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)__. 
 
 ```sh
-git clone https://github.com/BozhkoMaks/prjctr.git
+git clone https://github.com/BozhkoMaks/prjctr_third_project.git
 ```
 
 Після клонування ви зможете запускати тести командою
